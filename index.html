@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>oop project bacik data</title>
+  </head>
+  <body>
+
+
+
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow my-5">
+            <div class="card-body">
+              <h2>Add New Staff</h2>
+              <div class="msg"></div>
+              <hr>
+              <form id="staff_add_form" method="POST">
+                <div class="my-3">
+                  <label for="">Name</label>
+                  <input name="name" type="text" class="form-control">
+                </div>
+
+                <div class="my-3">
+                  <label for="">Cell</label>
+                  <input name="cell" type="text" class="form-control">
+                </div>
+
+                <div class="my-3">
+                  <label for="">Location</label>
+                  <input name="location" type="text" class="form-control">
+                </div>
+
+                <!-- <div class="my-3">
+                  <label for="">Gender</label>
+                  <input name="gender" type="radio" value="male" class="">
+                  <input name="gender" type="radio" value="potol" class="">
+                </div> -->
+
+                <!-- <div class="my-3">
+                  <label for="">food</label>
+                  <input name="food[]" type="checkbox" value="alo" class="">
+                  <input name="food[]" type="checkbox" value="potol" class="">
+                </div> -->
+
+                <div class="my-3">
+                  <label for="">Photo</label>
+                  <input name="photo" type="text" class="form-control">
+                </div>
+
+                <div class="my-3">
+
+                  <input type="Submit" class="btn btn-primary w-100">
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+          <div class="card shadow my-3">
+            <div class="card-body">
+              <h2>All Staff data</h2>
+              <hr>
+
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>name</th>
+                    <th>cell</th>
+                    <th>location</th>
+                    <th>photo</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody id="staff_data_list">
+                  
+                </tbody>
+
+
+              </table>
+
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    
+
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./src/Alert.js"></script>
+  </body>
+</html>
